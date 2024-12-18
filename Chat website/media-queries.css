@@ -1,0 +1,156 @@
+/* Media Query for Screens with max-width: 1110px */
+@media (max-width: 1110px) {
+  /* Header Styles */
+  header {
+    padding: 20px 10px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0);
+    background-color: #0f0235;
+  }
+  header .container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    gap: 10px;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: calc(1.8vw + 1rem); /* Dynamically adjusts font size */
+    word-wrap: break-word; /* Prevents long text from overflowing */
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header nav ul li {
+    margin: 0;
+  }
+  header nav ul li a {
+    font-size: calc(1.2vw + 0.7rem); /* Scales link size */
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    width: 100%; /* Ensures the link is responsive */
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative;
+  }
+  header nav ul li a:hover {
+    color: #6128ff;
+  }
+  /* Buttons in Header */
+  header .header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  header .header-buttons button {
+    font-size: calc(1vw + 0.8rem);
+    padding: 10px 20px;
+    width: auto; /* Prevent buttons from being too wide */
+  }
+  /* Footer Styles */
+  footer {
+    padding: 20px 10px;
+    background-color: #0f0235;
+    text-align: center;
+  }
+  footer .container {
+    max-width: 1200px; /* Restricts footer content within the viewport */
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  footer p {
+    font-size: calc(1vw + 0.5rem);
+    margin-bottom: 10px;
+    color: #ffffff;
+    word-wrap: break-word; /* Prevents overflow of long text */
+  }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer .social-icons a {
+    font-size: calc(1.2vw + 0.5rem); /* Dynamically adjust icon size */
+    color: #6128ff;
+  }
+}
+/* For Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 20px 10px;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0);
+    background-color: #0f0235;
+  }
+  header .container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    gap: 10px;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: calc(1.8vw + 1rem); /* Dynamically adjusts font size */
+    word-wrap: break-word; /* Prevents long text from overflowing */
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+  /* Footer Styles */
+  footer {
+    padding: 10px;
+  }
+  footer .container {
+    text-align: center;
+  }
+  footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+}
